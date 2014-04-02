@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [HTML5 Boilerplate](http://html5boilerplate.com)
 
 HTML5 Boilerplate is a professional front-end template for building fast,
@@ -61,3 +62,9 @@ you want to write about your project.
 Anyone and everyone is welcome to
 [contribute](https://github.com/h5bp/html5-boilerplate/blob/master/CONTRIBUTING.md). Hundreds
 of developers have helped make the HTML5 Boilerplate what it is today.
+=======
+yotfh
+=====
+
+Code for a website for Year Of The Fiery Horse (@yotfh), a music band.
+>>>>>>> ddf0735d327dc5d4e3366f33fbe2aa2e2b57e67e
