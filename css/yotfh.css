@@ -1,0 +1,21 @@
+/*
+    Document   : css/yotfh.css
+    Created on : 2014-04-02 09:20 PM
+    Author     : paulbarrett
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+    Custom styles for yofth website
+*/
+
+root {
+    display: block;
+}
+
+div {
+    background-color: #444;
+}
+.container h1 {
+    color: #ffffff;
+    font-family:Courier New;
+}
