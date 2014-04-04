@@ -17,5 +17,20 @@ div {
 }
 .container h1 {
     color: #ffffff;
-    font-family:Courier New;
+    font-family:Arial;
+    font-weight: bold;
+    font-size: 56px;
+}
+.container.main-title {
+    height: 200px;
+}
+ul.menu {
+    list-style:none;
+    margin:none;
+}
+ul.menu li {
+    float:left;
+    display: inline;
+    color: #fff;
+    margin-right: 10px;
 }
