@@ -11,14 +11,17 @@
 root {
     display: block;
 }
-
+body {
+    background: url("/img/background.png") #000 no-repeat fixed;
+}
 div {
-    background-color: #444;
+    //background-color: #444;
 }
 .container h1 {
     color: #ffffff;
-    font-family:Arial;
+    font-family: "Franklin Gothic FS Medium Condensed","Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
     font-weight: bold;
+    letter-spacing:-0.1em;
     font-size: 56px;
 }
 .container.main-title {
@@ -33,4 +36,8 @@ ul.menu li {
     display: inline;
     color: #fff;
     margin-right: 10px;
+    font-family: "Franklin Gothic FS Medium Condensed","Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    //font-weight: bold;
+    font-size: 36px;
+    letter-spacing: -0.1em;
 }
