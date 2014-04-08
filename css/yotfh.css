@@ -12,7 +12,8 @@ root {
     display: block;
 }
 body {
-    background: url("/img/background.png") #000 no-repeat fixed;
+    background-color: #444;
+    background: url('../img/background.png') #000 no-repeat fixed;
 }
 div {
     //background-color: #444;
