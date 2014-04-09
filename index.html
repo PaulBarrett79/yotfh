@@ -23,6 +23,40 @@
         <link rel="stylesheet" href="css/yotfh.css">
     </head>
     <body>
+	<div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '795702850441181',
+          status     : true,
+          xfbml      : false
+        });
+		FB.api("/YearoftheFieryHorse/events", {access_token:'795702850441181|RwW64sAWJ0FyGwDF_64uHjeIVLI'}, function (response) {
+					console.log(response);
+					var gigdiv = document.getElementById("gigs");
+					var gigdivinner = "";
+					if (response && !response.error) {
+					    for(var i=0; i < response.data.length; i++) {
+						  var fbevent = response.data[i];
+						  var eventDate = $.datepicker.formatDate('DD d MM yy', new Date(fbevent.start_time));
+						  gigdivinner += "<a href='http://www.facebook.com/events/" + fbevent.id + "'><h2>" + fbevent.name + "</h2></a><br/><p>" + eventDate + "</p>";
+						  
+						}
+						
+						gigdiv.innerHTML = gigdivinner;
+					  }
+					}
+				);
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -69,6 +103,7 @@
                 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+		<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
