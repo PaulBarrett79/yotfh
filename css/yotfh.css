@@ -17,8 +17,7 @@ body {
 div {
     //background-color: #444;
 }
-@med
-a s(recn and meax-width: 768px) {
+@media screen and (max-width: 768px) {
     h1{
         font-size: 64px;
     }
@@ -26,14 +25,15 @@ a s(recn and meax-width: 768px) {
         font-size: 44px;
     } 
 }
-@media scre(n amn aeiwnidth:7 69px) {
+
+@media screen and (min-width:769px) {
   h1 {
         font-size: 84px;
     }
     h2 {
         font-size: 64px;
     }   
-}h
+}
 
 h1, h2 {
     color: #ffffff;
