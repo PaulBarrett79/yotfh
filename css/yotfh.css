@@ -23,7 +23,10 @@ div {
     }
     h2 {
         font-size: 34px;
-    } 
+    }
+    p {
+        font-size:20px;
+    }
 }
 
 @media screen and (min-width:769px) {
@@ -32,7 +35,10 @@ div {
     }
     h2 {
         font-size: 64px;
-    }   
+    }
+    p {
+        font-size:30px;
+    }
 }
 
 h1, h2 {
@@ -40,14 +46,12 @@ h1, h2 {
     font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
     font-weight: bold;
     letter-spacing:-0.1em;
-}p {
+}
+p {
     color: #666;
-    font-size:30px;
+    //font-size:30px;
     font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
     letter-spacing:-0.1em;
-}
-#gigs {
-    padding-left:50px;
 }
 .container.main-title {
     height: 200px;
