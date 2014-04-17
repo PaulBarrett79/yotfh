@@ -12,10 +12,8 @@ y/*
 }
 body {
     background-color: #444;
-    background: url('../img/background.png') #000 no-repeat fixed;
-}
-div {
-    //background-color: #444;
+    background: url('../img/background.png') #000 no-repeat fixed right top;
+    font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
 }
 @media screen and (max-width: 768px) {
     h1{
@@ -43,14 +41,11 @@ div {
 
 h1, h2 {
     color: #ffffff;
-    font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
     font-weight: bold;
     letter-spacing:-0.1em;
 }
 p {
     color: #666;
-    //font-size:30px;
-    font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
     letter-spacing:-0.1em;
 }
 .container.main-title {
@@ -65,8 +60,6 @@ ul.menu li {
     display: inline;
     color: #fff;
     margin-right: 10px;
-    font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
-    //font-weight: bold;
     font-size: 36px;
     letter-spacing: -0.1em;
 }
