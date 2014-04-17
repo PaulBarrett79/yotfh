@@ -45,7 +45,7 @@
                     for(var i = 0; i < response.data.length; i++) {
                         var fbevent = response.data[i];
                         var eventDate = $.datepicker.formatDate('DD d MM yy', new Date(fbevent.start_time));
-                        gigdivinner += "<a href='http://www.facebook.com/events/" + fbevent.id + "'><h2>" + fbevent.name + "</h2></a><br/><p>" + eventDate + "</p>";
+                        gigdivinner += "<a href='http://www.facebook.com/events/" + fbevent.id + "'><h2>" + fbevent.name + "</h2></a><br/><p class='gig date'>" + eventDate + "</p>";
                     }
                     gigdiv.innerHTML = gigdivinner;
                 }
@@ -92,7 +92,8 @@
         </ul>
         <div class="tab-content col-xs-12 col-sm-12 col-md-8 col-lg-8">
             <div class="tab-pane fade in active" id="home">
-                home
+                <p></p>
+                <p>Year Of The Fiery Horse are a musical band</p>
             </div>
             <div class="tab-pane fade" id="music">
                 <iframe width="90%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/44657819&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
@@ -114,13 +115,13 @@
 
             </div>
             <div class="tab-pane fade" id="gigs">
-                gigs
+                <p>gigs</p>
             </div>
             <div class="tab-pane fade" id="images">
-                images
+                <p>images from flickr / instagram will appear here</p>
             </div>
             <div class="tab-pane fade" id="contact">
-                <iframe src="https://docs.google.com/forms/d/1DUShOgBILYQ4-RuL3cf9-h6wzrSkegH0VCQv9dKwN38/viewform?embedded=true" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                <iframe id="contact-iframe" src="https://docs.google.com/forms/d/1DUShOgBILYQ4-RuL3cf9-h6wzrSkegH0VCQv9dKwN38/viewform?embedded=true" width="400" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             </div>
         </div>
     </div>

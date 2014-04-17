@@ -13,7 +13,7 @@ y/*
 body {
     background-color: #444;
     background: url('../img/background.png') #000 no-repeat fixed right top;
-    font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", sans-serif;
 }
 @media screen and (max-width: 768px) {
     h1{
@@ -45,8 +45,11 @@ h1, h2 {
     letter-spacing:-0.1em;
 }
 p {
-    color: #666;
     letter-spacing:-0.1em;
+    color:#fff;
+}
+.gig.date {
+    color: #666;  
 }
 .container.main-title {
     height: 200px;
@@ -66,7 +69,13 @@ ul.menu li {
 @media screen and (max-width: 768px) {
     
     ul.menu li {
-         font-size: 26px;
+        font-size: 26px;
+    }
+    .nav>li>a {
+        position: relative;
+        margin-right: 4px;
+        display: block;
+        padding: 6px 10px;
     }
     
 }
@@ -82,4 +91,10 @@ li > a:hover, li > a:focus {
 }
 .row {
     margin:0;
+}
+div#contact {
+  width:100%;
+}
+#contact-iframe {
+    width: 100%;
 }
