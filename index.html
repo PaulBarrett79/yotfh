@@ -118,7 +118,16 @@
                 <p>gigs</p>
             </div>
             <div class="tab-pane fade" id="images">
-                <p>images from flickr / instagram will appear here</p>
+                <script src="js/vendor/instafeed.min.js"></script>
+                <script type="text/javascript">
+                    var userFeed = new Instafeed({
+                        get: 'user',
+                        userId: 1326731111,
+                        accessToken: '1326731111.467ede5.b8511df3b6064a13add7b7d2b464a088'
+                    });
+                    userFeed.run();
+                </script>
+                 <div id="instafeed"></div>
             </div>
             <div class="tab-pane fade" id="contact">
                 <iframe id="contact-iframe" src="https://docs.google.com/forms/d/1DUShOgBILYQ4-RuL3cf9-h6wzrSkegH0VCQv9dKwN38/viewform?embedded=true" width="400" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
