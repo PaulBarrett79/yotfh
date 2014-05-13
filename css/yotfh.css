@@ -17,7 +17,7 @@ body {
 }
 @media screen and (max-width: 768px) {
     h1{
-        font-size: 54px;
+        font-size: 66px;
     }
     h2 {
         font-size: 34px;
@@ -38,7 +38,11 @@ body {
         font-size:30px;
     }
 }
-
+@media screen and (max-width: 460px) {
+  body {
+    background: url('../img/background-phone.png') #000 no-repeat fixed right top;
+  }
+}
 h1, h2 {
     color: #ffffff;
     font-weight: bold;
