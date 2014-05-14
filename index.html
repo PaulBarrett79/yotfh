@@ -120,11 +120,15 @@
                     var userFeed = new Instafeed({
                         get: 'user',
                         userId: 1296479148,
-                        accessToken: '1296479148.467ede5.6fe848a7eb6d4ae5b740d08b08668bc7'
+                        accessToken: '1296479148.467ede5.6fe848a7eb6d4ae5b740d08b08668bc7',
+						template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
                     });
                     userFeed.run();
                 </script>
                  <div id="instafeed"></div>
+				 <div style="text-align:center;">
+					Follow us on <a href="www.instagram.com/yotfh" target="_blank">Instagram</a>
+				 </div>
             </div>
             <div class="tab-pane fade" id="contact">
                 <iframe id="contact-iframe" src="https://docs.google.com/forms/d/1DUShOgBILYQ4-RuL3cf9-h6wzrSkegH0VCQv9dKwN38/viewform?embedded=true" width="400" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
