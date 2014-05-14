@@ -38,11 +38,7 @@ body {
         font-size:30px;
     }
 }
-@media screen and (max-width: 460px) {
-  body {
-    background: url('../img/background-phone.png') #000 no-repeat fixed right top;
-  }
-}
+
 h1, h2 {
     color: #ffffff;
     font-weight: bold;
@@ -82,6 +78,11 @@ ul.menu li {
         padding: 6px 10px;
     }
     
+}
+@media only screen and (max-width: 460px) {
+  body {
+    background: url('../img/background-phone.png') #000 no-repeat fixed right top;
+  }
 }
 li > a {
     color:#eee;
