@@ -12,8 +12,10 @@ y/*
 }
 body {
     background-color: #444;
-    background: url('../img/background.png') #000 no-repeat fixed right top;
+    /*background: url('../img/background.png') #000 no-repeat fixed right top;*/
+    background: url('../img/yotfh-gate.jpg') #000 no-repeat;
     font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", sans-serif;
+    background-size: 100%;
 }
 @media screen and (max-width: 768px) {
     h1{
