@@ -106,10 +106,10 @@ div#contact {
     width: 100%;
 }
 #footer {
-    position: absolute;
-bottom: 0;
+    
+/*
 width: 100%;
-height: 40px;
+height: 40px;*/
 background-color: #000;
     text-align:center;
 }
@@ -120,9 +120,10 @@ background-color: #000;
 /* At mobile resolutions, make footer scroll down with content */
 @media only screen and (max-width: 460px) {
   #footer {
-    position: relative;
+    /*position: relative;*/
+    font-size: 0.7em;
   }
   div.tab-content {
-    min-height: 200px;
+    /*min-height: 200px;*/
   }
 }
