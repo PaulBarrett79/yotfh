@@ -27,6 +27,9 @@ body {
     p {
         font-size:20px;
     }
+	p small {
+		font-size: 12px;
+	}
 }
 
 @media screen and (min-width:769px) {
@@ -39,6 +42,9 @@ body {
     p {
         font-size:30px;
     }
+	p small {
+		font-size: 20px;
+	}
 }
 
 h1, h2 {
@@ -47,11 +53,14 @@ h1, h2 {
     letter-spacing:-0.1em;
 }
 p {
-    letter-spacing:-0.1em;
+    letter-spacing:-0.07em;
     color:#fff;
 }
+p small {
+	letter-spacing:-0.05em;
+}
 .gig.date {
-    color: #666;  
+    color: cornflowerblue;  
 }
 .container.main-title {
     height: 200px;
