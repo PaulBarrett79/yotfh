@@ -13,39 +13,37 @@
 body {
     background-color: #444;
     /*background: url('../img/background.png') #000 no-repeat fixed right top;*/
-    /*background: url('../img/yotfh-gate.jpg') #000 no-repeat;*/
+    background: url('../img/yotfh-gate.jpg') #000 no-repeat;
     font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", sans-serif;
     background-size: 100%;
 }
 @media screen and (max-width: 768px) {
     h1{
-        font-size: 56px;
+        font-size: 66px;
     }
     h2 {
         font-size: 34px;
     }
     p {
-        font-size:16px;
+        font-size:20px;
     }
 	p small {
-		font-size: 10px;
+		font-size: 12px;
 	}
 }
 
 @media screen and (min-width:769px) {
   h1 {
-        font-size: 70px;
+        font-size: 84px;
     }
     h2 {
         font-size: 64px;
     }
     p {
-        font-size:20px;
-        line-height:1em;
+        font-size:30px;
     }
 	p small {
-		font-size: 14px;
-        line-height: 1em;
+		font-size: 20px;
 	}
 }
 
@@ -65,17 +63,11 @@ p small {
     color: cornflowerblue;  
 }
 .container.main-title {
-    height: 300px;
-}
-#header-title {
-    height: 300px;
-    background: url('../img/yotfh-gate-sm.jpg') #000 no-repeat 70% 50%;
+    height: 200px;
 }
 ul.menu {
     list-style:none;
     margin:none;
-    position: absolute;
-    top: 230px;
 }
 ul.menu li {
     float:left;
