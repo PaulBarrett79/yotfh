@@ -17,19 +17,32 @@ body {
     font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", sans-serif;
     background-size: 100%;
 }
+ul.menu {
+    list-style:none;
+    margin:none;
+    position: absolute;
+}
 @media screen and (max-width: 768px) {
     h1{
-        font-size: 56px;
+        font-size: 36px;
     }
     h2 {
-        font-size: 34px;
+        font-size: 24px;
     }
     p {
         font-size:16px;
     }
 	p small {
-		font-size: 10px;
+		font-size: 12px;
 	}
+    #header-title {
+        height: 250px;
+        background: url('../img/yotfh-gate-sm.jpg') transparent no-repeat 70% 73%;
+        background-size: 100% auto;
+    }
+    ul.menu {
+        top: 200px; 
+    }
 }
 
 @media screen and (min-width:769px) {
@@ -47,12 +60,21 @@ body {
 		font-size: 14px;
         line-height: 1em;
 	}
+    #header-title {
+        height: 300px;
+        background: url('../img/yotfh-gate-sm.jpg') #000 no-repeat 70% 50%;
+    }
+    ul.menu {
+        top: 230px;
+    }
+
 }
 
 h1, h2 {
     color: #ffffff;
     font-weight: bold;
     letter-spacing:-0.1em;
+    margin-top:10px;
 }
 p {
     letter-spacing:-0.07em;
@@ -67,16 +89,7 @@ p small {
 .container.main-title {
     height: 300px;
 }
-#header-title {
-    height: 300px;
-    background: url('../img/yotfh-gate-sm.jpg') #000 no-repeat 70% 50%;
-}
-ul.menu {
-    list-style:none;
-    margin:none;
-    position: absolute;
-    top: 230px;
-}
+
 ul.menu li {
     float:left;
     display: inline;
@@ -88,13 +101,12 @@ ul.menu li {
 @media screen and (max-width: 768px) {
     
     ul.menu li {
-        font-size: 26px;
+        font-size: 16px;
     }
     .nav>li>a {
         position: relative;
-        margin-right: 4px;
         display: block;
-        padding: 6px 10px;
+        padding: 6px 6px;
     }
     
 }
