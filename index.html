@@ -42,6 +42,9 @@
                 var gigdiv = document.getElementById("gigs");
                 var gigdivinner = "";
                 if(response && !response.error) {
+                    if (response.data.length == 0) {
+                        gigdivinner = "<h3 style='color:white;'>Check back soon for more gigs<br>If you want us to play your venue, contact us!</h3>";
+                    }
                     for(var i = 0; i < response.data.length; i++) {
                         var fbevent = response.data[i];
                         var eventDate = $.datepicker.formatDate('DD d MM yy', new Date(fbevent.start_time));
