@@ -24,17 +24,20 @@ ul.menu {
 }
 @media screen and (max-width: 768px) {
     h1{
-        font-size: 32px;
+        font-size: 36px;
     }
     h2 {
         font-size: 24px;
     }
+    h2.gig-title {
+        font-size: 20px;
+    }
     p {
         font-size:16px;
     }
-	p small {
-		font-size: 12px;
-	}
+    p small {
+        font-size: 12px;
+    }
     #header-title {
         height: 250px;
         background: url('../img/yotfh-gate-sm.jpg') transparent no-repeat 70% 73%;
@@ -52,14 +55,17 @@ ul.menu {
     h2 {
         font-size: 64px;
     }
+    h2.gig-title {
+        font-size: 50px;
+    }
     p {
         font-size:20px;
         line-height:1em;
     }
-	p small {
-		font-size: 14px;
+    p small {
+        font-size: 14px;
         line-height: 1em;
-	}
+    }
     #header-title {
         height: 300px;
         background: url('../img/yotfh-gate-sm.jpg') #000 no-repeat 70% 50%;
@@ -81,7 +87,7 @@ p {
     color:#fff;
 }
 p small {
-	letter-spacing:-0.05em;
+    letter-spacing:-0.05em;
 }
 .gig.date {
     color: cornflowerblue;  
