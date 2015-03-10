@@ -35,20 +35,25 @@
                 status: true,
                 xfbml: false
             });
-            FB.api("/YearoftheFieryHorse/events", {
+            FB.api("/YearoftheFieryHorse/events?fields=name,start_time,timezone,description,location", {
                 access_token: '795702850441181|RwW64sAWJ0FyGwDF_64uHjeIVLI'
             }, function(response) {
-                console.log(response);
                 var gigdiv = document.getElementById("gigs");
                 var gigdivinner = "";
                 if(response && !response.error) {
                     if (response.data.length == 0) {
                         gigdivinner = "<h3 style='color:white;'>Check back soon for more gigs<br>If you want us to play your venue, contact us!</h3>";
                     }
-                    for(var i = 0; i < response.data.length; i++) {
-                        var fbevent = response.data[i];
-                        var eventDate = $.datepicker.formatDate('DD d MM yy', new Date(fbevent.start_time));
-                        gigdivinner += "<a href='http://www.facebook.com/events/" + fbevent.id + "'><h2>" + fbevent.name + "</h2></a><p class='gig date'>" + eventDate + "</p>";
+                    //we get given events in earliest first order - reverse please
+                    var norml = response.data.reverse();
+                    for(var i = 0; i < norml.length; i++) {
+                        var fbevent = norml[i];
+                        //console.log(fbevent);
+                        var arr = fbevent.start_time.split(/[-T]+/);
+                        var ios_date = new Date(arr[0] + '/' + arr[1] + '/' + arr[2]);
+                        var eventDate = $.datepicker.formatDate('DD d MM yy', ios_date);
+                        
+                        gigdivinner += "<a href='http://www.facebook.com/events/" + fbevent.id + "'><h2 class='gig-title'>" + fbevent.name + "</h2></a><p class='gig date'>" + eventDate + "</p>";
                     }
                     gigdiv.innerHTML = gigdivinner;
                 }
@@ -119,7 +124,7 @@
                                 Adam Mayes - on the drums</small>
                             </p>
                             <p>
-                                We were recently played on the Steve Lamacq "6 Music Recommends" show, <a href="http://www.bbc.co.uk/programmes/b04xwzlv" target="_blank">click here</a> to listen (we are 51 minutes in)
+                                We were recently played on the Steve Lamacq "6 Music Recommends" show!
                             </p>
                         </div>
                         <div class="col-sm-4">

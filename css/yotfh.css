@@ -29,6 +29,9 @@ ul.menu {
     h2 {
         font-size: 24px;
     }
+    h2.gig-title {
+        font-size: 20px;
+    }
     p {
         font-size:16px;
     }
@@ -51,6 +54,9 @@ ul.menu {
     }
     h2 {
         font-size: 64px;
+    }
+    h2.gig-title {
+        font-size: 50px;
     }
     p {
         font-size:20px;
