@@ -13,74 +13,44 @@
 body {
     background-color: #444;
     /*background: url('../img/background.png') #000 no-repeat fixed right top;*/
-    /*background: url('../img/yotfh-gate.jpg') #000 no-repeat;*/
+    background: url('../img/yotfh-gate.jpg') #000 no-repeat;
     font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", sans-serif;
     background-size: 100%;
 }
-ul.menu {
-    list-style:none;
-    margin:none;
-    position: absolute;
-}
 @media screen and (max-width: 768px) {
     h1{
-        font-size: 36px;
+        font-size: 66px;
     }
     h2 {
-        font-size: 24px;
-    }
-    h2.gig-title {
-        font-size: 20px;
+        font-size: 34px;
     }
     p {
-        font-size:16px;
+        font-size:20px;
     }
 	p small {
 		font-size: 12px;
 	}
-    #header-title {
-        height: 250px;
-        background: url('../img/yotfh-gate-sm.jpg') transparent no-repeat 70% 73%;
-        background-size: 100% auto;
-    }
-    ul.menu {
-        top: 200px; 
-    }
 }
 
 @media screen and (min-width:769px) {
   h1 {
-        font-size: 70px;
+        font-size: 84px;
     }
     h2 {
         font-size: 64px;
     }
-    h2.gig-title {
-        font-size: 50px;
-    }
     p {
-        font-size:20px;
-        line-height:1em;
+        font-size:30px;
     }
 	p small {
-		font-size: 14px;
-        line-height: 1em;
+		font-size: 20px;
 	}
-    #header-title {
-        height: 300px;
-        background: url('../img/yotfh-gate-sm.jpg') #000 no-repeat 70% 50%;
-    }
-    ul.menu {
-        top: 230px;
-    }
-
 }
 
 h1, h2 {
     color: #ffffff;
     font-weight: bold;
     letter-spacing:-0.1em;
-    margin-top:10px;
 }
 p {
     letter-spacing:-0.07em;
@@ -93,9 +63,12 @@ p small {
     color: cornflowerblue;  
 }
 .container.main-title {
-    height: 300px;
+    height: 200px;
 }
-
+ul.menu {
+    list-style:none;
+    margin:none;
+}
 ul.menu li {
     float:left;
     display: inline;
@@ -107,12 +80,13 @@ ul.menu li {
 @media screen and (max-width: 768px) {
     
     ul.menu li {
-        font-size: 16px;
+        font-size: 26px;
     }
     .nav>li>a {
         position: relative;
+        margin-right: 4px;
         display: block;
-        padding: 6px 6px;
+        padding: 6px 10px;
     }
     
 }
