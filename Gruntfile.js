@@ -12,26 +12,48 @@ module.exports = function(grunt) {
     //    dest: 'build/<%= pkg.name %>.min.js'
     //  }
     //}
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: '_site/css',
+          //src: ['*.css', '!*.min.css'],
+          src: ['clean.css'],
+          dest: '_site/css',
+          ext: '.min.css',
+        }]
+      }
+    },
     imagemin: {
-      //static: {
+      options: {
+        optimizationLevel: 7 // 7 = 240 trials
+      },
+      files: {
+        expand: true, // Enable dynamic expansion
+        cwd: '_site/img', // Where to find images
+        src: '*.{png,PNG,jpg,JPG,gif,GIF,jpeg,JPEG}', // Search for all image types
+        dest: '_site/img' // Where to save compressed images to (overwrite)
+      }
+    },
+    uncss: {
+      dist: {
         options: {
-          optimizationLevel: 7 // 7 = 240 trials
+          stylesheets: ['css/main.css','css/normalize.css','css/yotfh.css'] // List of stylesheets to clean up
         },
         files: {
-          expand: true, // Enable dynamic expansion
-          cwd: '_site/img', // Where to find images
-          src: '*.{png,PNG,jpg,JPG,gif,GIF,jpeg,JPEG}', // Search for all image types
-          dest: '_site/img' // Where to save compressed images to (overwrite)
+          '_site/css/clean.css': ['_site/index.html'], // What files to check for usage
         }
-      //}
+      }
     }
   });
 
   // Load the plugin that provides the "uglify" task.
   //grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-uncss');
 
   // Default task(s).
-  grunt.registerTask('default', ['imagemin']);
+  grunt.registerTask('default', ['imagemin', 'uncss', 'cssmin']);
 
 };
