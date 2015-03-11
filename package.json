@@ -1,0 +1,26 @@
+{
+  "name": "yotfh",
+  "version": "1.0.0",
+  "description": "yotfh.com",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaulBarrett79/yotfh.git"
+  },
+  "author": "paulbarrett79",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulBarrett79/yotfh/issues"
+  },
+  "homepage": "https://www.paulbarrettdev.com/yotfh",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-imagemin": "^0.9.3"
+  }
+}
