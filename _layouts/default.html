@@ -35,6 +35,7 @@
             }, function(response) {
                 var gigdiv = document.getElementById("gigs");
                 var gigdivinner = "";
+                var today = new Date();
                 if(response && !response.error) {
                     if (response.data.length == 0) {
                         gigdivinner = "<h3 style='color:white;'>Check back soon for more gigs<br>If you want us to play your venue, contact us!</h3>";
@@ -47,8 +48,11 @@
                         var arr = fbevent.start_time.split(/[-T]+/);
                         var ios_date = new Date(arr[0] + '/' + arr[1] + '/' + arr[2]);
                         var eventDate = $.datepicker.formatDate('DD d MM yy', ios_date);
+
+                        if (ios_date >= today) {
+                            gigdivinner += "<a href='http://www.facebook.com/events/" + fbevent.id + "'><h2 class='gig-title'>" + fbevent.name + "</h2></a><p class='gig date'>" + eventDate + "</p>";
+                        }
                         
-                        gigdivinner += "<a href='http://www.facebook.com/events/" + fbevent.id + "'><h2 class='gig-title'>" + fbevent.name + "</h2></a><p class='gig date'>" + eventDate + "</p>";
                     }
                     gigdiv.innerHTML = gigdivinner;
                 }
