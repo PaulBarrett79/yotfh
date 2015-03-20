@@ -30,9 +30,9 @@ module.exports = function(grunt) {
       },
       files: {
         expand: true, // Enable dynamic expansion
-        cwd: '_site/img', // Where to find images
+        cwd: 'img', // Where to find images
         src: '*.{png,PNG,jpg,JPG,gif,GIF,jpeg,JPEG}', // Search for all image types
-        dest: '_site/img' // Where to save compressed images to (overwrite)
+        dest: 'img' // Where to save compressed images to (overwrite)
       }
     },
     uncss: {
