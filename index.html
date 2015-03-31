@@ -27,6 +27,37 @@ layout: default
  <div class="tab-content">
           <div class="tab-pane active" id="home">
 
+                    <div class="row" id="flaneur">
+
+                        <div class="col-sm-4">
+                            <img src="img/flaneur.png" class="img-responsive">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <h3 class="gig-title text-center" style="margin-top:30px;">New EP </h3>
+                            <h3 class="gig-title text-center">"Fl&acirc;neur"</h3>
+                            <h4 class="text-center" style="color:white;">Available soon via Bandcamp</h4>
+                        </div>
+
+
+                        <div class="col-sm-4" id="twitter-box">
+                            <a class="twitter-timeline" href="https://twitter.com/YOTFH" data-widget-id="451096012581388288">Tweets by @YOTFH</a>
+                            <script>
+                                ! function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0],
+                                        p = /^http:/.test(d.location) ? 'http' : 'https';
+                                    if(!d.getElementById(id)) {
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = p + "://platform.twitter.com/widgets.js";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }
+                                }(document, "script", "twitter-wjs");
+                            </script>
+                        </div>
+
+                    </div>
+
                     <div class="row">
                         <div class="col-sm-4">
                             <p class="hidden-xs hidden-sm">&nbsp;</p>
@@ -48,7 +79,7 @@ layout: default
                             <div id="gigs">
                                 <p>Loading gigs...</p>
                             </div>
-                        </div>
+                        </div><!-- 
                         <div class="col-sm-4" id="twitter-box">
                             <a class="twitter-timeline" href="https://twitter.com/YOTFH" data-widget-id="451096012581388288">Tweets by @YOTFH</a>
                             <script>
@@ -63,16 +94,20 @@ layout: default
                                     }
                                 }(document, "script", "twitter-wjs");
                             </script>
+                        </div> -->
+
+                        <div class="col-sm-4 hidden-xs">
+                            <iframe width="100%" height="350" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/44657819&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
                         </div>
 
                     </div>
 
                     <div class="row">
-
+<!-- 
                         <div class="col-sm-4 hidden-xs">
                             <iframe width="100%" height="350" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/44657819&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
-                        </div>
-                        <div class="col-sm-8">
+                        </div> -->
+                        <div class="col-sm-12">
                             <iframe class="hidden-xs hidden-sm" width="725" height="408" src="https://www.youtube.com/embed/iNacoSGt-tQ" frameborder="0" allowfullscreen></iframe>
                             <iframe class="hidden-lg hidden-md" width="270" height="152" src="https://www.youtube.com/embed/iNacoSGt-tQ" frameborder="0" allowfullscreen></iframe>
                             <p class="hidden-xs hidden-sm">&nbsp;</p>
@@ -95,16 +130,7 @@ layout: default
                     <iframe width="90%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/44657819&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
                 </div>
                 <div class="tab-pane fade" id="images">
-                    <script src="js/vendor/instafeed.min.js"></script>
-                    <script type="text/javascript">
-                        var userFeed = new Instafeed({
-                            get: 'user',
-                            userId: 1296479148,
-                            accessToken: '1296479148.467ede5.6fe848a7eb6d4ae5b740d08b08668bc7',
-                template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
-                        });
-                        userFeed.run();
-                    </script>
+                    
                      <div id="instafeed"></div>
              <div style="text-align:center;">
               Follow us on <a href="www.instagram.com/yotfh" target="_blank">Instagram</a>

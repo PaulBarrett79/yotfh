@@ -29,7 +29,7 @@ ul.menu {
     h2 {
         font-size: 24px;
     }
-    h2.gig-title {
+    h2.gig-title, h3 {
         font-size: 20px;
     }
     p {
@@ -55,7 +55,7 @@ ul.menu {
     h2 {
         font-size: 64px;
     }
-    h2.gig-title {
+    h2.gig-title, h3 {
         font-size: 50px;
     }
     p {
@@ -76,11 +76,14 @@ ul.menu {
 
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #ffffff;
     font-weight: bold;
     letter-spacing:-0.1em;
     margin-top:10px;
+}
+h3 {
+    letter-spacing:0em;
 }
 p {
     letter-spacing:-0.07em;

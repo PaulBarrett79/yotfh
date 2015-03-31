@@ -37,9 +37,7 @@
                 var gigdivinner = "";
                 var today = new Date();
                 if(response && !response.error) {
-                    if (response.data.length == 0) {
-                        gigdivinner = "<h3 style='color:white;'>Check back soon for more gigs<br>If you want us to play your venue, contact us!</h3>";
-                    }
+                    
                     //we get given events in earliest first order - reverse please
                     var norml = response.data.reverse();
                     for(var i = 0; i < norml.length; i++) {
@@ -53,6 +51,10 @@
                             gigdivinner += "<a href='http://www.facebook.com/events/" + fbevent.id + "'><h2 class='gig-title'>" + fbevent.name + "</h2></a><p class='gig date'>" + eventDate + "</p>";
                         }
                         
+                    }
+                    //now check that there are no gigs are that some have been removed
+                    if (response.data.length == 0 || gigdivinner == "") {
+                        gigdivinner = "<h4 style='color:white;'>Check back soon for more gigs.<br>If you want us to play your venue, contact us!</h4>";
                     }
                     gigdiv.innerHTML = gigdivinner;
                 }
@@ -94,6 +96,17 @@
     <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/vendor/instafeed.min.js"></script>
+    <script type="text/javascript">
+                        var userFeed = new Instafeed({
+                            get: 'user',
+                            userId: 1296479148,
+                            accessToken: '1296479148.467ede5.6fe848a7eb6d4ae5b740d08b08668bc7',
+                template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
+                        });
+                        console.log("Instafeed bitch!")
+                        userFeed.run();
+                    </script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
