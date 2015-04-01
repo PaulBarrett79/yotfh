@@ -46,6 +46,7 @@ ul.menu {
     ul.menu {
         top: 200px; 
     }
+    
 }
 
 @media screen and (min-width:769px) {
@@ -72,6 +73,9 @@ ul.menu {
     }
     ul.menu {
         top: 230px;
+    }    
+    .desktop-top-margin {
+        margin-top:30px;
     }
 
 }
