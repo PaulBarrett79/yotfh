@@ -22,6 +22,9 @@ ul.menu {
     margin:none;
     position: absolute;
 }
+h4.gig-title {
+    color:white;
+}
 @media screen and (max-width: 768px) {
     h1{
         font-size: 30px;
@@ -31,6 +34,9 @@ ul.menu {
     }
     h2.gig-title, h3 {
         font-size: 20px;
+    }
+    h4.gig-title {
+        font-size:16px;
     }
     p {
         font-size:16px;
@@ -58,6 +64,10 @@ ul.menu {
     }
     h2.gig-title, h3 {
         font-size: 50px;
+    }
+
+    h4.gig-title {
+        font-size:34px;
     }
     p {
         font-size:20px;
