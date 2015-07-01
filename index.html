@@ -1,116 +1,65 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+---
+layout: default
+---
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Year Of The Fiery Horse</title>
-    <meta name="description" content="YOTFH music band Manchester Liverpool Year Fiery Horse">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <div class="home">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <h1 class="page-heading">Posts</h1>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <link rel="stylesheet" href="css/yotfh.css">
-</head>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-<body>
-    <div id="fb-root"></div>
-    <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-                appId: '795702850441181',
-                status: true,
-                xfbml: false
-            });
-            FB.api("/YearoftheFieryHorse/events?fields=name,start_time,timezone,description,location", {
-                access_token: '795702850441181|RwW64sAWJ0FyGwDF_64uHjeIVLI'
-            }, function(response) {
-                var gigdiv = document.getElementById("gigs");
-                var gigdivinner = "";
-                if(response && !response.error) {
-                    if (response.data.length == 0) {
-                        gigdivinner = "<h3 style='color:white;'>Check back soon for more gigs<br>If you want us to play your venue, contact us!</h3>";
-                    }
-                    //we get given events in earliest first order - reverse please
-                    var norml = response.data.reverse();
-                    for(var i = 0; i < norml.length; i++) {
-                        var fbevent = norml[i];
-                        //console.log(fbevent);
-                        var arr = fbevent.start_time.split(/[-T]+/);
-                        var ios_date = new Date(arr[0] + '/' + arr[1] + '/' + arr[2]);
-                        var eventDate = $.datepicker.formatDate('DD d MM yy', ios_date);
+</div>
+ -->
+
+
+ <div class="tab-content">
+          <div class="tab-pane active" id="home">
+
+                    <div class="row" id="flaneur">
+
                         
-                        gigdivinner += "<a href='http://www.facebook.com/events/" + fbevent.id + "'><h2 class='gig-title'>" + fbevent.name + "</h2></a><p class='gig date'>" + eventDate + "</p>";
-                    }
-                    gigdiv.innerHTML = gigdivinner;
-                }
-            });
-        };
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if(d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://connect.facebook.net/en_US/all.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
 
-    <!-- Add your site or application content here -->
+                        <div class="col-sm-4 col-sm-push-4">
+                            <h4 class="gig-title text-center desktop-top-margin">We're the Liverpool Echo's <a href="http://t.co/6F0ejI3ImA" target="_blank" style="color:#E0930D">Buzz Band Of The Week</a></h4>
+                                <hr>
+                            <h4 class="gig-title text-center desktop-top-margin">New EP "Fl&acirc;neur"</h4>
+                            <h4 class="gig-title text-center" style="color:white;">Available NOW via Bandcamp! <br><a href="http://yearofthefieryhorse.bandcamp.com" target="_blank" style="color:#E0930D">Get it here!</a></h4>
+                        </div>
+
+                        <div class="col-sm-4 col-sm-pull-4">
+                            <img src="img/flaneur.png" class="img-responsive">
+                        </div>
 
 
-    <div class="container">
-        <header id="header-title">
-            <div class="row">
-                <div class="main-title col-sm-8">
-                    <h1>year of the fiery horse</h1>
-                </div>
-                <div class="col-sm-4 text-right" id="social">
-                    <a href="https://twitter.com/yotfh" target="_blank"><img src="img/twitter.png"></a>
-                    <a href="https://www.facebook.com/YearoftheFieryHorse" target="_blank"><img src="img/facebook.png"></a>
-                    <a href="https://www.youtube.com/channel/UCT-4Iw7DQF-zD_JyAB_8cBA" target="_blank"><img src="img/youtube.png"></a>
-                    <a href="https://soundcloud.com/year-of-the-fiery-horse" target="_blank"><img src="img/soundcloud.png"></a>
-                    <a href="http://instagram.com/yotfh" target="_blank"><img src="img/instagram.png"></a>
-                </div>
-            </div>
-                
-            <div class="row">
-                <ul class="menu nav nav-pills" id="mainMenu">
-                    <!--<li class="active"><a href="#home" data-toggle="pill">home</a>
-                    </li>-->
-                    <li class="active"><a href="#home" data-toggle="pill">home</a>
-                    </li>
-                    <li><a href="#music" data-toggle="pill">music</a>
-                    </li>
-                    <li><a href="#images" data-toggle="pill">images</a>
-                    </li>
-                    <li><a href="#contact" data-toggle="pill">contact</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <div class="row">
-            
-            <div class="tab-content">
-    			<div class="tab-pane active" id="home">
+                        <div class="col-sm-4" id="twitter-box">
+                            <a class="twitter-timeline" href="https://twitter.com/YOTFH" data-widget-id="451096012581388288">Tweets by @YOTFH</a>
+                            <script>
+                                ! function(d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0],
+                                        p = /^http:/.test(d.location) ? 'http' : 'https';
+                                    if(!d.getElementById(id)) {
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = p + "://platform.twitter.com/widgets.js";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }
+                                }(document, "script", "twitter-wjs");
+                            </script>
+                        </div>
+
+                    </div>
 
                     <div class="row">
                         <div class="col-sm-4">
@@ -133,7 +82,7 @@
                             <div id="gigs">
                                 <p>Loading gigs...</p>
                             </div>
-                        </div>
+                        </div><!-- 
                         <div class="col-sm-4" id="twitter-box">
                             <a class="twitter-timeline" href="https://twitter.com/YOTFH" data-widget-id="451096012581388288">Tweets by @YOTFH</a>
                             <script>
@@ -148,16 +97,20 @@
                                     }
                                 }(document, "script", "twitter-wjs");
                             </script>
+                        </div> -->
+
+                        <div class="col-sm-4 hidden-xs">
+                            <iframe width="100%" height="350" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/44657819&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
                         </div>
 
                     </div>
 
                     <div class="row">
-
+<!-- 
                         <div class="col-sm-4 hidden-xs">
                             <iframe width="100%" height="350" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/44657819&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
-                        </div>
-                        <div class="col-sm-8">
+                        </div> -->
+                        <div class="col-sm-12">
                             <iframe class="hidden-xs hidden-sm" width="725" height="408" src="https://www.youtube.com/embed/iNacoSGt-tQ" frameborder="0" allowfullscreen></iframe>
                             <iframe class="hidden-lg hidden-md" width="270" height="152" src="https://www.youtube.com/embed/iNacoSGt-tQ" frameborder="0" allowfullscreen></iframe>
                             <p class="hidden-xs hidden-sm">&nbsp;</p>
@@ -174,60 +127,19 @@
 
 
 
-    			
-    			</div>
+          
+          </div>
                 <div class="tab-pane fade" id="music">
                     <iframe width="90%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/44657819&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
                 </div>
                 <div class="tab-pane fade" id="images">
-                    <script src="js/vendor/instafeed.min.js"></script>
-                    <script type="text/javascript">
-                        var userFeed = new Instafeed({
-                            get: 'user',
-                            userId: 1296479148,
-                            accessToken: '1296479148.467ede5.6fe848a7eb6d4ae5b740d08b08668bc7',
-    						template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
-                        });
-                        userFeed.run();
-                    </script>
+                    
                      <div id="instafeed"></div>
-    				 <div style="text-align:center;">
-    					Follow us on <a href="www.instagram.com/yotfh" target="_blank">Instagram</a>
-    				 </div>
+             <div style="text-align:center;">
+              Follow us on <a href="www.instagram.com/yotfh" target="_blank">Instagram</a>
+             </div>
                 </div>
                 <div class="tab-pane fade" id="contact">
                     <iframe id="contact-iframe" src="https://docs.google.com/forms/d/1DUShOgBILYQ4-RuL3cf9-h6wzrSkegH0VCQv9dKwN38/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
                 </div>
             </div>
-        </div>
-        
-    </div>
-    <div id="footer" class="footer navbar-fixed-bottom">
-        <div class="container">
-            Music copyright Year Of The Fiery Horse. Site design by <a href="http://github.com/PaulBarrett79" target="blank">Paul Barrett</a>
-        </div>
-    </div>
-    
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')
-    </script>
-    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <!--
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-		-->
-</body>
-
-</html>

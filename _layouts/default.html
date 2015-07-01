@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Year Of The Fiery Horse</title>
+    <meta name="description" content="Year of the Fiery Horse are a band based in the North West">
+    <meta name="keywords" content="YOTFH,music,band,Manchester,Liverpool,Year,Fiery,Horse,pop,soundcloud,demos,bandcamp,flaneur,montmartre,library,party">
+    <meta content="{{ site.title }}" property="og:title">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="css/yotfh.css">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.api("/YearoftheFieryHorse/events?fields=name,start_time,timezone,description,location", {
+                access_token: '795702850441181|RwW64sAWJ0FyGwDF_64uHjeIVLI'
+            }, function(response) {
+                var gigdiv = document.getElementById("gigs");
+                var gigdivinner = "";
+                var today = new Date();
+                if(response && !response.error) {
+                    
+                    //we get given events in earliest first order - reverse please
+                    var norml = response.data.reverse();
+                    for(var i = 0; i < norml.length; i++) {
+                        var fbevent = norml[i];
+                        //console.log(fbevent);
+                        var arr = fbevent.start_time.split(/[-T]+/);
+                        var ios_date = new Date(arr[0] + '/' + arr[1] + '/' + arr[2]);
+                        var eventDate = $.datepicker.formatDate('DD d MM yy', ios_date);
+
+                        if (ios_date >= today) {
+                            gigdivinner += "<a href='http://www.facebook.com/events/" + fbevent.id + "'><h2 class='gig-title'>" + fbevent.name + "</h2></a><p class='gig date'>" + eventDate + "</p>";
+                        }
+                        
+                    }
+                    //now check that there are no gigs are that some have been removed
+                    if (response.data.length == 0 || gigdivinner == "") {
+                        gigdivinner = "<h4 style='color:white;'>Check back soon for more gigs.<br>If you want us to play your venue, contact us!</h4>";
+                    }
+                    gigdiv.innerHTML = gigdivinner;
+                }
+            });
+        };
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if(d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/all.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+
+    <div class="container">
+        {% include header.html %}
+        <div class="row">
+            
+            {{content}}
+        </div>
+        
+    </div>
+    {% include footer.html %}
+    
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')
+    </script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/vendor/instafeed.min.js"></script>
+    <script type="text/javascript">
+                        var userFeed = new Instafeed({
+                            get: 'user',
+                            userId: 1296479148,
+                            accessToken: '1296479148.467ede5.6fe848a7eb6d4ae5b740d08b08668bc7',
+                template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
+                        });
+                        console.log("Instafeed bitch!")
+                        userFeed.run();
+                    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    -->
+</body>
+
+</html>
