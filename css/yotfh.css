@@ -11,16 +11,19 @@
     display: block;
 }
 body {
-    background-color: #444;
+    background-color: #000;
     /*background: url('../img/background.png') #000 no-repeat fixed right top;*/
     /*background: url('../img/yotfh-gate.jpg') #000 no-repeat;*/
-    font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", sans-serif;
+    /*font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", sans-serif;*/
+    font-family: "HoundsRegular", serif;
     background-size: 100%;
+}
+em {
+    font-family: "HoundsItalic", serif;
 }
 ul.menu {
     list-style:none;
     margin:none;
-    position: absolute;
 }
 h4.gig-title {
     color:white;
@@ -28,15 +31,19 @@ h4.gig-title {
 @media screen and (max-width: 768px) {
     h1{
         font-size: 30px;
+        font-family: "HoundsBold", serif;
     }
     h2 {
         font-size: 24px;
+        font-family: "HoundsBold", serif;
     }
     h2.gig-title, h3 {
         font-size: 20px;
+        font-family: "HoundsBold", serif;
     }
     h4.gig-title {
         font-size:16px;
+        font-family: "HoundsBold", serif;
     }
     p {
         font-size:16px;
@@ -46,7 +53,7 @@ h4.gig-title {
     }
     #header-title {
         height: 250px;
-        background: url('../img/yotfh-gate-sm.jpg') transparent no-repeat 70% 73%;
+        background: url('../img/yotfh-header.png') transparent no-repeat 50% 50%;
         background-size: 100% auto;
     }
     ul.menu {
@@ -57,29 +64,33 @@ h4.gig-title {
 
 @media screen and (min-width:769px) {
   h1 {
-        font-size: 70px;
+        font-size: 50px;
+        font-family: "HoundsBold", serif;
     }
     h2 {
-        font-size: 64px;
+        font-size: 40px;
+        font-family: "HoundsBold", serif;
     }
     h2.gig-title, h3 {
-        font-size: 50px;
+        font-size: 30px;
+        font-family: "HoundsBold", serif;
     }
 
     h4.gig-title {
-        font-size:34px;
+        font-size:20px;
+        font-family: "HoundsBold", serif;
     }
     p {
-        font-size:20px;
+        font-size:16px;
         line-height:1em;
     }
     p small {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1em;
     }
     #header-title {
         height: 300px;
-        background: url('../img/yotfh-gate-sm.jpg') #000 no-repeat 70% 50%;
+        background: url('../img/yotfh-header.png') #000 no-repeat 50% 50%;
     }
     ul.menu {
         top: 230px;
@@ -92,19 +103,15 @@ h4.gig-title {
 
 h1, h2, h3 {
     color: #ffffff;
-    font-weight: bold;
-    letter-spacing:-0.1em;
     margin-top:10px;
 }
 h3 {
     letter-spacing:0em;
 }
 p {
-    letter-spacing:-0.07em;
     color:#fff;
 }
 p small {
-    letter-spacing:-0.05em;
 }
 .gig.date {
     color: cornflowerblue;  
