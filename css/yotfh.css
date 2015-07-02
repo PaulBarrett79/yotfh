@@ -31,30 +31,33 @@ h4.gig-title {
     color:white;
 }
 @media screen and (max-width: 768px) {
+    .main-title {
+        padding: 0 10px;
+    }
     h1{
-        font-size: 30px;
-        font-family: "HoundsBold", serif;
-    }
-    h2 {
-        font-size: 24px;
-        font-family: "HoundsBold", serif;
-    }
-    h2.gig-title, h3 {
         font-size: 20px;
         font-family: "HoundsBold", serif;
     }
+    h2 {
+        font-size: 18px;
+        font-family: "HoundsBold", serif;
+    }
+    h2.gig-title, h3 {
+        font-size: 16px;
+        font-family: "HoundsBold", serif;
+    }
     h4.gig-title {
-        font-size:16px;
+        font-size:14px;
         font-family: "HoundsBold", serif;
     }
     p {
-        font-size:16px;
+        font-size:12px;
     }
     p small {
-        font-size: 12px;
+        font-size: 10px;
     }
     #header-title {
-        height: 250px;
+        height: 120px;
         background: url('../img/yotfh-header.png') transparent no-repeat 50% 50%;
         background-size: 100% auto;
     }
@@ -143,9 +146,9 @@ ul.menu li {
     
 }
 @media only screen and (max-width: 460px) {
-  body {
+  /*body {
     background: url('../img/background-phone.png') #000 no-repeat fixed right top;
-  }
+  }*/
 }
 li > a {
     color:#eee;
