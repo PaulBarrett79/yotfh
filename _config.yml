@@ -12,3 +12,8 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+gigs:
+ - title: "YOTFH@maguires"
+   location: "Maguires Liverpool"
+   date: "2015-07-17"
+
