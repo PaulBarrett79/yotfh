@@ -191,6 +191,10 @@ background-color: #000;
     color: #444;
     text-decoration: underline;
 }
+.gig-date {
+    border-radius:10px;
+    background-color:#444;
+}
 /* At mobile resolutions, make footer scroll down with content */
 @media only screen and (max-width: 460px) {
   #footer {
