@@ -38,12 +38,13 @@
     </div>
     <div class="row">
       <ul class="menu nav">
-        <li class="active">Latest News.</li>
-        <li>Music.</li>
-        <li>Gigs.</li>
-        <li>Media.</li>
-        <li>Contact.</li>
-        <li>About the band.</li>
+        {% assign url = page.url|remove:'index.html' %}
+        {% for link in site.navigation %}
+        <li {% if url == link.url %}class="active"{% endif %}>
+            <a href="{{link.url}}" title="{{link.title}}">{{link.text}}.</a>
+        </li>
+        {% endfor %}
+
       </ul>
     </div>
       
@@ -59,19 +60,6 @@
       
   </div>
 </div>
-        
-<!-- <div class="row">
-    <ul class="menu nav nav-pills" id="mainMenu">
-        <li class="active"><a href="#home" data-toggle="pill">home</a>
-        </li>
-        <li><a href="http://yearofthefieryhorse.bandcamp.com" style="color:#E0930D" role="pill">shop</a>
-        </li>
-        <li><a href="#music" data-toggle="pill">music</a>
-        </li>
-        <li><a href="#contact" data-toggle="pill">contact</a>
-        </li>
-    </ul>
-</div> -->
 
 <div class="row">
   <div class="col-xs-12"><hr></div>
