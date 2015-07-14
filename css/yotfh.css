@@ -23,6 +23,9 @@ body {
 em {
     font-family: "HoundsItalic", serif;
 }
+a:link, a:visited {
+    color: #E0930D;
+}
 ul.menu {
     list-style:none;
     margin:none;
@@ -87,11 +90,11 @@ h4.gig-title {
     }
     p {
         font-size:16px;
-        line-height:1em;
+        line-height:1.3em;
     }
     p small {
         font-size: 12px;
-        line-height: 1em;
+        line-height: 1.3em;
     }
     #header-title {
         height: 300px;
@@ -130,7 +133,7 @@ ul.menu {
 ul.menu li {
     float:left;
     display: inline;
-    color: #444;
+    color: #E0930D;
     margin-right: 10px;
     font-size: 1.3vw;
     background-color:#000;
@@ -140,12 +143,12 @@ ul.menu li.active {
 }
 ul.menu li a, ul.menu li a:hover {
     padding:0;
-    color:#444;
+    color:#E0930D;
     line-height:1.2em;
     background-color:#000;
 }
 a:hover, ul.menu li a:hover, a:hover h3 {
-    color: #E0930D;
+    color: #eee;
     text-decoration: none;
 }
 ul.menu li.active a {

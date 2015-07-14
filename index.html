@@ -28,23 +28,38 @@ permalink: /
  <div class="tab-content">
           <div class="tab-pane active" id="home">
 
-                    <div class="row" id="flaneur">
+                    <div class="row">
 
                         
 
-                        <div class="col-sm-4 col-sm-push-4">
-                            <h4 class="gig-title text-center desktop-top-margin">We're the Liverpool Echo's <a href="http://t.co/6F0ejI3ImA" target="_blank" style="color:#E0930D">Buzz Band Of The Week</a></h4>
-                                <hr>
+                        <div class="col-sm-8"  id="fp-left">
+
+                            <!-- Posts go here -->
+                            {% for post in site.posts %}
+                              
+                                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                                <h3>
+                                  {{ post.title }}
+                                </h3>
+                                {{ post.content }}
+                                <p>Cheers
+                                <br>
+                                Adam,Bren,Mike,Phil
+                                <br>
+                                YOTFH
+                                <hr></p>
+                              
+                            {% endfor %}
+
+                        </div>
+
+
+                        <div class="col-sm-4" id="fp-right">
                             <h4 class="gig-title text-center desktop-top-margin">New EP "Fl&acirc;neur"</h4>
                             <h4 class="gig-title text-center" style="color:white;">Available NOW via Bandcamp! <br><a href="http://yearofthefieryhorse.bandcamp.com" target="_blank" style="color:#E0930D">Get it here!</a></h4>
-                        </div>
 
-                        <div class="col-sm-4 col-sm-pull-4">
                             <img src="img/flaneur.png" class="img-responsive">
-                        </div>
-
-
-                        <div class="col-sm-4" id="twitter-box">
                             <a class="twitter-timeline" href="https://twitter.com/YOTFH" data-widget-id="451096012581388288">Tweets by @YOTFH</a>
                             <script>
                                 ! function(d, s, id) {
@@ -62,55 +77,10 @@ permalink: /
 
                     </div>
 
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="hidden-xs hidden-sm">&nbsp;</p>
-                            <p>Hello! We are a four piece alternative rock / synthpop band from the Liverpool/Manchester area with a sound that has been compared to Phoenix, Metronomy and Pavement.</p>
-                            <p class="text-center"><small>
-                                We are (L-R):<br>
-                                Bren Collins - singing, guitar, bass<br>
-                                Phil Larkin - keyboards and singing<br>
-                                Mike Barrett - singing, bass, guitar<br>
-                                Adam Mayes - on the drums</small>
-                            </p>
-                            <p>
-                                We were recently played on the Steve Lamacq "6 Music Recommends" show!
-                            </p>
-                        </div>
-                        <div class="col-sm-4">
-                            <p class="hidden-xs hidden-sm">&nbsp;</p>
-                            <p>Gigs</p>
-                            <div id="gigs">
-                                <p>Loading gigs...</p>
-                            </div>
-                        </div><!-- 
-                        <div class="col-sm-4" id="twitter-box">
-                            <a class="twitter-timeline" href="https://twitter.com/YOTFH" data-widget-id="451096012581388288">Tweets by @YOTFH</a>
-                            <script>
-                                ! function(d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0],
-                                        p = /^http:/.test(d.location) ? 'http' : 'https';
-                                    if(!d.getElementById(id)) {
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src = p + "://platform.twitter.com/widgets.js";
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                    }
-                                }(document, "script", "twitter-wjs");
-                            </script>
-                        </div> -->
-
+                    <!-- <div class="row"> 
                         <div class="col-sm-4 hidden-xs">
                             <iframe width="100%" height="350" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/44657819&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
                         </div>
-
-                    </div>
-
-                    <div class="row">
-<!-- 
-                        <div class="col-sm-4 hidden-xs">
-                            <iframe width="100%" height="350" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/44657819&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
-                        </div> -->
                         <div class="col-sm-12">
                             <iframe class="hidden-xs hidden-sm" width="725" height="408" src="https://www.youtube.com/embed/iNacoSGt-tQ" frameborder="0" allowfullscreen></iframe>
                             <iframe class="hidden-lg hidden-md" width="270" height="152" src="https://www.youtube.com/embed/iNacoSGt-tQ" frameborder="0" allowfullscreen></iframe>
@@ -119,7 +89,7 @@ permalink: /
                         
 
                     </div>  
-
+ -->
 
 
 
@@ -130,17 +100,5 @@ permalink: /
 
           
           </div>
-                <div class="tab-pane fade" id="music">
-                    <iframe width="90%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/44657819&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
-                </div>
-                <div class="tab-pane fade" id="images">
-                    
-                     <div id="instafeed"></div>
-             <div style="text-align:center;">
-              Follow us on <a href="www.instagram.com/yotfh" target="_blank">Instagram</a>
-             </div>
-                </div>
-                <div class="tab-pane fade" id="contact">
-                    <iframe id="contact-iframe" src="https://docs.google.com/forms/d/1DUShOgBILYQ4-RuL3cf9-h6wzrSkegH0VCQv9dKwN38/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                </div>
+
             </div>
