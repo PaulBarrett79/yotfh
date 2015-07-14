@@ -1,0 +1,22 @@
+---
+layout: default
+permalink: /gigs/
+---
+<div class="row">
+	<div class="col-xs-12"><h2>Upcoming Gigs</h2></div>
+</div>
+	{% assign sorted_gigs = site.gigs | sort: 'date' %}
+	{% for gig in sorted_gigs %}
+<div class="row">
+	<div class="col-xs-12 col-sm-3" style="padding-top:10px;">
+		<div class="gig-date text-center">
+			<p style="padding:20px;">{{ gig.date | date: '%d %B %Y' }}</p>
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-9">
+		<a href="{{gig.url}}" target="_blank"><h3>{{ gig.title }}<br><small>{% if gig.supporting %}supporting {{gig.supporting}}{% endif %} {% if gig.with %}with {{gig.with}}{% endif %}</small></h3></a>
+		<p>{{gig.location}}</p>
+		<p>Doors {{gig.doors}} // {{gig.tax}}</p>
+	</div>
+</div>
+	{% endfor %}

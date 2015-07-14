@@ -1,0 +1,59 @@
+# Site settings
+title: Year of the Fiery Horse
+email: info@yotfh.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: http://www.yotfh.com # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+gigs:
+ - title: "YOTFH @ Maguires"
+   location: "Maguire's Pizza Bar, Renshaw St., Liverpool"
+   date: "2015-07-19"
+   with: "Evans The Death, ADHD"
+   doors: "7.30pm"
+   tax: "£4"
+   url: "https://www.facebook.com/events/812421148832749/"
+
+ - title: "YOTFH @ Leaf"
+   location: "Leaf, Bold St., Liverpool"
+   date: "2015-09-17"
+   supporting: "Sweet Baboo"
+   with: "Silent Sleep"
+   doors: "8pm"
+   tax: "£10"
+   url: "http://www.skiddle.com/whats-on/Liverpool/Leaf-On-Bold-Street/SWEET-BABOO/12441214/"
+
+ - title: "YOTFH @ The Well Space"
+   location: "The Well Space, Roscoe St., Liverpool"
+   date: "2015-08-07"
+   with: "The Roscoes, SPQR"
+   supporting: "COLOUR" 
+   doors: "7.30pm"
+   tax: "£3"
+   url: "https://www.eventbrite.co.uk/e/colour-the-well-space-tickets-17657896243"
+
+navigation:
+ - text: Latest News
+   url: /
+
+ - text: Music
+   url: "http://yearofthefieryhorse.bandcamp.com"
+
+ - text: Gigs
+   url: /gigs/
+
+ - text: Media
+   url: /media/
+
+ - text: Contact
+   url: /contact/
+
+ - text: About The Band
+   url: /bio/

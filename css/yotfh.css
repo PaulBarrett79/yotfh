@@ -7,87 +7,119 @@
     To change this template use Tools | Templates.
     Custom styles for yofth website
 */
+
+@media (min-width: 1200px) { .row { margin-left: -20px; *zoom: 1; } .row:before, .row:after { display: table; line-height: 0; content: ""; } .row:after { clear: both; } [class*="span"] { float: left; min-height: 1px; margin-left: 20px; } .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 940px; } .span12 { width: 940px; } .span11 { width: 860px; } .span10 { width: 780px; } .span9 { width: 700px; } .span8 { width: 620px; } .span7 { width: 540px; } .span6 { width: 460px; } .span5 { width: 380px; } .span4 { width: 300px; } .span3 { width: 220px; } .span2 { width: 140px; } .span1 { width: 60px; } .offset12 { margin-left: 980px; } .offset11 { margin-left: 900px; } .offset10 { margin-left: 820px; } .offset9 { margin-left: 740px; } .offset8 { margin-left: 660px; } .offset7 { margin-left: 580px; } .offset6 { margin-left: 500px; } .offset5 { margin-left: 420px; } .offset4 { margin-left: 340px; } .offset3 { margin-left: 260px; } .offset2 { margin-left: 180px; } .offset1 { margin-left: 100px; } }
  root {
     display: block;
 }
 body {
-    background-color: #444;
+    background-color: #000;
     /*background: url('../img/background.png') #000 no-repeat fixed right top;*/
     /*background: url('../img/yotfh-gate.jpg') #000 no-repeat;*/
-    font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", sans-serif;
+    /*font-family:"Franklin Gothic FS Medium Condensed", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", sans-serif;*/
+    font-family: "HoundsRegular", serif;
     background-size: 100%;
+}
+em {
+    font-family: "HoundsItalic", serif;
+}
+a:link, a:visited {
+    color: #E0930D;
 }
 ul.menu {
     list-style:none;
     margin:none;
-    position: absolute;
+}
+h4.gig-title {
+    color:white;
 }
 @media screen and (max-width: 768px) {
+    .main-title {
+        padding: 0 10px;
+    }
     h1{
-        font-size: 36px;
+        font-size: 6.8vw;
+        font-family: "HoundsBold", serif;
     }
     h2 {
-        font-size: 24px;
+        font-size: 18px;
+        font-family: "HoundsBold", serif;
     }
-    h2.gig-title {
-        font-size: 20px;
+    h2.gig-title, h3 {
+        font-size: 16px;
+        font-family: "HoundsBold", serif;
+    }
+    h4.gig-title {
+        font-size:14px;
+        font-family: "HoundsBold", serif;
     }
     p {
-        font-size:16px;
+        font-size:12px;
     }
-	p small {
-		font-size: 12px;
-	}
+    p small {
+        font-size: 10px;
+    }
     #header-title {
-        height: 250px;
-        background: url('../img/yotfh-gate-sm.jpg') transparent no-repeat 70% 73%;
+        height: 120px;
+        background: url('../img/yotfh-header.png') transparent no-repeat 50% 50%;
         background-size: 100% auto;
     }
     ul.menu {
         top: 200px; 
     }
+    
 }
 
 @media screen and (min-width:769px) {
   h1 {
-        font-size: 70px;
+        font-size: 3vw;
+        font-family: "HoundsBold", serif;
     }
     h2 {
-        font-size: 64px;
+        font-size: 40px;
+        font-family: "HoundsBold", serif;
     }
-    h2.gig-title {
-        font-size: 50px;
+    h2.gig-title, h3 {
+        font-size: 30px;
+        font-family: "HoundsBold", serif;
+    }
+
+    h4.gig-title {
+        font-size:20px;
+        font-family: "HoundsBold", serif;
     }
     p {
-        font-size:20px;
-        line-height:1em;
+        font-size:16px;
+        line-height:1.3em;
     }
-	p small {
-		font-size: 14px;
-        line-height: 1em;
-	}
+    p small {
+        font-size: 12px;
+        line-height: 1.3em;
+    }
     #header-title {
         height: 300px;
-        background: url('../img/yotfh-gate-sm.jpg') #000 no-repeat 70% 50%;
+        background: url('../img/yotfh-header.png') #000 no-repeat 50% 50%;
     }
     ul.menu {
         top: 230px;
+    }    
+    .desktop-top-margin {
+        margin-top:30px;
     }
 
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #ffffff;
-    font-weight: bold;
-    letter-spacing:-0.1em;
     margin-top:10px;
 }
+h3 {
+    letter-spacing:0em;
+}
 p {
-    letter-spacing:-0.07em;
     color:#fff;
 }
 p small {
-	letter-spacing:-0.05em;
 }
 .gig.date {
     color: cornflowerblue;  
@@ -95,19 +127,42 @@ p small {
 .container.main-title {
     height: 300px;
 }
-
+ul.menu {
+    margin:0;
+}
 ul.menu li {
     float:left;
     display: inline;
-    color: #fff;
+    color: #E0930D;
     margin-right: 10px;
-    font-size: 36px;
-    letter-spacing: -0.1em;
+    font-size: 1.3vw;
+    background-color:#000;
+}
+ul.menu li.active {
+    color:#fff;
+}
+ul.menu li a, ul.menu li a:hover {
+    padding:0;
+    color:#E0930D;
+    line-height:1.2em;
+    background-color:#000;
+}
+a:hover, ul.menu li a:hover, a:hover h3 {
+    color: #eee;
+    text-decoration: none;
+}
+ul.menu li.active a {
+    padding:0;
+    color:#fff;
+}
+
+.spacer {
+
 }
 @media screen and (max-width: 768px) {
     
     ul.menu li {
-        font-size: 16px;
+        font-size: 2.4vw;
     }
     .nav>li>a {
         position: relative;
@@ -117,18 +172,18 @@ ul.menu li {
     
 }
 @media only screen and (max-width: 460px) {
-  body {
+  /*body {
     background: url('../img/background-phone.png') #000 no-repeat fixed right top;
-  }
+  }*/
 }
 li > a {
     color:#eee;
 }
 li > a:hover, li > a:focus {
     color:#444;
+    background-color: #000;
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    background-color: #ddd;
     color: #444;
 }
 .row {
@@ -148,9 +203,16 @@ height: 40px;*/
 background-color: #000;
     text-align:center;
 }
+#social {
+    margin-top:14px;
+}
 #footer a {
     color: #444;
     text-decoration: underline;
+}
+.gig-date {
+    border-radius:10px;
+    background-color:#444;
 }
 /* At mobile resolutions, make footer scroll down with content */
 @media only screen and (max-width: 460px) {
