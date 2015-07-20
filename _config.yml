@@ -13,13 +13,6 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 gigs:
- - title: "YOTFH @ Maguires"
-   location: "Maguire's Pizza Bar, Renshaw St., Liverpool"
-   date: "2015-07-19"
-   with: "Evans The Death, ADHD"
-   doors: "7.30pm"
-   tax: "£4"
-   url: "https://www.facebook.com/events/812421148832749/"
 
  - title: "YOTFH @ Leaf"
    location: "Leaf, Bold St., Liverpool"
@@ -44,13 +37,14 @@ navigation:
    url: /
 
  - text: Music
-   url: "http://yearofthefieryhorse.bandcamp.com"
+   url: /music/
+   #url: "http://yearofthefieryhorse.bandcamp.com"
 
  - text: Gigs
    url: /gigs/
 
- - text: Media
-   url: /media/
+ - text: Visuals
+   url: /visuals/
 
  - text: Contact
    url: /contact/
