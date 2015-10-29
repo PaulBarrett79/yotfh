@@ -28,12 +28,23 @@ module.exports = function(grunt) {
       options: {
         optimizationLevel: 7 // 7 = 240 trials
       },
-      files: {
-        expand: true, // Enable dynamic expansion
-        cwd: 'img', // Where to find images
-        src: '*.{png,PNG,jpg,JPG,gif,GIF,jpeg,JPEG}', // Search for all image types
-        dest: 'img' // Where to save compressed images to (overwrite)
-      }
+      main: {
+        files: [{
+            expand: true, // Enable dynamic expansion
+            cwd: 'img', // Where to find images
+            src: '*.{png,PNG,jpg,JPG,gif,GIF,jpeg,JPEG}', // Search for all image types
+            dest: 'img' // Where to save compressed images to (overwrite)
+          }],
+        },
+
+      baytv: {
+        files:[{
+              expand: true, // Enable dynamic expansion
+              cwd: 'img/baytv', // Where to find images
+              src: '*.{png,PNG,jpg,JPG,gif,GIF,jpeg,JPEG}', // Search for all image types
+              dest: 'img/baytv' // Where to save compressed images to (overwrite)
+            }],
+          },
     },
     uncss: {
       dist: {

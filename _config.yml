@@ -23,15 +23,6 @@ gigs:
    tax: "£10"
    url: "http://www.skiddle.com/whats-on/Liverpool/Leaf-On-Bold-Street/SWEET-BABOO/12441214/"
 
- - title: "YOTFH @ The Well Space"
-   location: "The Well Space, Roscoe St., Liverpool"
-   date: "2015-08-07"
-   with: "The Roscoes, SPQR"
-   supporting: "COLOUR" 
-   doors: "7.30pm"
-   tax: "£3"
-   url: "https://www.eventbrite.co.uk/e/colour-the-well-space-tickets-17657896243"
-
 navigation:
  - text: Latest News
    url: /
