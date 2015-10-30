@@ -11,3 +11,10 @@ permalink: /visuals/
 		<iframe class="hidden-lg hidden-md" width="270" height="152" src="https://www.youtube.com/embed/iNacoSGt-tQ" frameborder="0" allowfullscreen=""></iframe>
 	</div>
 </div>
+<div class="row">
+	<p></p>
+	<h3>Pics from YOTFH at Bay TV</h3>
+	{% for pic in site.baytvimages %}
+		<div class="col-xs-4"><img src="{{pic.url}}" class="img img-responsive"></div>
+	{% endfor %}
+</div>

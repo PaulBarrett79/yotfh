@@ -5,6 +5,14 @@ permalink: /gigs/
 <div class="row">
 	<div class="col-xs-12"><h2>Upcoming Gigs</h2></div>
 </div>
+	{% if site.gigs.size == 1 && site.gigs[0].nogigs %}
+	<div class="row">
+		<div class="col-xs-12">
+			<h3><small>More gigs will be announced soon...</small></h3>
+		</div>
+	</div>
+	{% else %}
+	
 	{% assign sorted_gigs = site.gigs | sort: 'date' %}
 	{% for gig in sorted_gigs %}
 <div class="row">
@@ -20,3 +28,5 @@ permalink: /gigs/
 	</div>
 </div>
 	{% endfor %}
+
+	{% endif %}

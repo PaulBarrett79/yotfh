@@ -33,6 +33,10 @@ ul.menu {
 h4.gig-title {
     color:white;
 }
+.post-meta {
+    font-size: 14px;
+    color: #828282;
+}
 @media screen and (max-width: 768px) {
     .main-title {
         padding: 0 10px;
@@ -135,7 +139,7 @@ ul.menu li {
     display: inline;
     color: #E0930D;
     margin-right: 10px;
-    font-size: 1.3vw;
+    font-size: 1vw;
     background-color:#000;
 }
 ul.menu li.active {

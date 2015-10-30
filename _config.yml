@@ -13,15 +13,17 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 gigs:
+ - title: 'More gigs announced soon...'
+   nogigs: 'nogigs'
 
- - title: "YOTFH @ Leaf"
-   location: "Leaf, Bold St., Liverpool"
-   date: "2015-09-17"
-   supporting: "Sweet Baboo"
-   with: "Silent Sleep"
-   doors: "8pm"
-   tax: "£10"
-   url: "http://www.skiddle.com/whats-on/Liverpool/Leaf-On-Bold-Street/SWEET-BABOO/12441214/"
+ # - title: "YOTFH @ Leaf"
+ #   location: "Leaf, Bold St., Liverpool"
+ #   date: "2015-09-17"
+ #   supporting: "Sweet Baboo"
+ #   with: "Silent Sleep"
+ #   doors: "8pm"
+ #   tax: "£10"
+ #   url: "http://www.skiddle.com/whats-on/Liverpool/Leaf-On-Bold-Street/SWEET-BABOO/12441214/"
 
 navigation:
  - text: Latest News
@@ -42,3 +44,41 @@ navigation:
 
  - text: About The Band
    url: /bio/
+
+baytvimages:
+ - caption: ''
+   url: /img/baytv/baytv01.png
+ - caption: ''
+   url: /img/baytv/baytv02.png
+ - caption: ''
+   url: /img/baytv/baytv03.png
+ - caption: ''
+   url: /img/baytv/baytv04.png
+ - caption: ''
+   url: /img/baytv/baytv05.png
+ - caption: ''
+   url: /img/baytv/baytv06.png
+ - caption: ''
+   url: /img/baytv/baytv07.png
+ - caption: ''
+   url: /img/baytv/baytv08.png
+ - caption: ''
+   url: /img/baytv/baytv09.png
+ - caption: ''
+   url: /img/baytv/baytv10.png
+ - caption: ''
+   url: /img/baytv/baytv11.png
+ - caption: ''
+   url: /img/baytv/baytv12.png
+ - caption: ''
+   url: /img/baytv/baytv13.png
+ - caption: ''
+   url: /img/baytv/baytv14.png
+ - caption: ''
+   url: /img/baytv/baytv15.png
+ - caption: ''
+   url: /img/baytv/baytv16.png
+ - caption: ''
+   url: /img/baytv/baytv17.png
+ - caption: ''
+   url: /img/baytv/baytv18.png
