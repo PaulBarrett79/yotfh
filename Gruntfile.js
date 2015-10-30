@@ -45,6 +45,14 @@ module.exports = function(grunt) {
               dest: 'img/baytv' // Where to save compressed images to (overwrite)
             }],
           },
+      baytv_site: {
+        files:[{
+              expand: true, // Enable dynamic expansion
+              cwd: '_site/img/baytv', // Where to find images
+              src: '*.{png,PNG,jpg,JPG,gif,GIF,jpeg,JPEG}', // Search for all image types
+              dest: '_site/img/baytv' // Where to save compressed images to (overwrite)
+            }],
+          },
     },
     uncss: {
       dist: {
