@@ -1,9 +1,9 @@
 ---
-title: '"The Fl&acirc;neur" EP now available on iTunes, Spotify, Tidal and Google Play'
+title: '"Fl&acirc;neur" EP now available on iTunes, Spotify, Tidal and Google Play'
 layout: post
 tags: news
 ---
-Our recent EP "The Fl&acirc;neur" is now available to download and stream from more places. As well as our Soundcloud and Bandcamp pages, you can find the The Fl&acirc;neur on iTunes, Spotify, Tidal and Google Play. Use the links below.
+Our recent "Fl&acirc;neur" EP is now available to download and stream from more places. As well as our Soundcloud and Bandcamp pages, you can find "Fl&acirc;neur" on iTunes, Spotify, Tidal and Google Play. Use the links below.
 
 <div class="row"><div class="col-xs-6 col-sm-3"><a href="https://geo.itunes.apple.com/gb/album/flaneur-ep/id1059219308?mt=1&app=music" target="_blank" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_music-lrg.svg) no-repeat;width:165px;height:40px;"></a></div>
 <div class="col-xs-6 col-sm-3"><a href="https://t.co/Z5Kkki6OYs" target="_blank"><img src="/img/listen_on_spotify-black.png" class="img img-responsive"> </a></div>

@@ -37,7 +37,7 @@ h4.gig-title {
     font-size: 14px;
     color: #828282;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
     .main-title {
         padding: 0 10px;
     }
@@ -74,7 +74,8 @@ h4.gig-title {
     
 }
 
-@media screen and (min-width:769px) {
+
+@media screen and (min-width:761px) {
   h1 {
         font-size: 2.7vw;
         font-family: "HoundsBold", serif;
@@ -112,6 +113,13 @@ h4.gig-title {
     }
 
 }
+@media screen and (max-width:901px) {
+    h1 {
+        font-size: 5vw;
+        font-family: "HoundsBold", serif;
+    }
+}
+
 
 h1, h2, h3 {
     color: #ffffff;
@@ -138,7 +146,7 @@ ul.menu li {
     float:left;
     display: inline;
     color: #E0930D;
-    margin-right: 10px;
+    margin-right: 7px;
     font-size: 1vw;
     background-color:#000;
 }
