@@ -51,24 +51,23 @@
       
   </div>
   <div class="main-title pull-left">
-    <div class="row">
+    
       <h1>Year of the Fiery Horse</h1>
-    </div>
-    <div class="row">
-      <ul class="menu nav">
-        {% assign url = page.url|remove:'index.html' %}
-        {% for link in site.navigation %}
-        <li {% if url == link.url %}class="active"{% endif %}>
-            <a href="{{link.url}}" title="{{link.title}}">{{link.text}}.</a>
-        </li>
-        {% endfor %}
-
-      </ul>
-    </div>
       
   </div>
-</div>
 
+</div>
+<div class="row">
+    <div class="col-xs-12"><ul class="menu nav">
+          {% assign url = page.url|remove:'index.html' %}
+          {% for link in site.navigation %}
+          <li {% if url == link.url %}class="active"{% endif %}>
+              <a href="{{link.url}}" title="{{link.title}}">{{link.text}}.</a>
+          </li>
+          {% endfor %}
+    
+        </ul></div>
+  </div>
 <div class="row">
   <div class="col-xs-12"><hr></div>
 </div>
