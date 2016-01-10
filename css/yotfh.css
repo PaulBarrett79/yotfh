@@ -65,7 +65,7 @@ h4.gig-title {
     }
     #header-title {
         height: 120px;
-        background: url('../img/yotfh-header.png') transparent no-repeat 50% 50%;
+        background: url('../img/yotfh-header-3.png') transparent no-repeat 50% 50%;
         background-size: 100% auto;
     }
     ul.menu {
@@ -103,7 +103,7 @@ h4.gig-title {
     }
     #header-title {
         height: 300px;
-        background: url('../img/yotfh-header.png') #000 no-repeat 50% 50%;
+        background: url('../img/yotfh-header-3.png') #000 no-repeat 50% 50%;
     }
     ul.menu {
         top: 230px;
