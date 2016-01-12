@@ -4,7 +4,7 @@ layout: post
 tags: news
 ---
 
-We are delighted to announce the release of our latest EP - "Recreation", containing 4 tracks recorded with Andy Fernihough at Crash Studios.
+We are delighted to announce the release of our latest EP - "Recreation", containing 4 tracks recorded with Andy Fernihough.
 
 <figure>
 <img src="img/recreation-cover-300.png" class="img img-responsive center-block" style="border:1px solid #444">
@@ -12,9 +12,9 @@ We are delighted to announce the release of our latest EP - "Recreation", contai
 
 <br>
 
-The EP is available on <a href="#" target="_blank">Bandcamp</a>.
+The EP is available now on <a href="#" target="_blank">Bandcamp</a>.
 
-We'll be announcing some gig dates soon.
+We'll be announcing some gig dates soon -keep an eye out for updates!
 
 
 
