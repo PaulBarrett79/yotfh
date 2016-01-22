@@ -12,7 +12,7 @@ We are delighted to announce the release of our latest EP - "Recreation", contai
 
 <br>
 
-The EP is available now on <a href="https://yearofthefieryhorse.bandcamp.com" target="_blank">Bandcamp</a>.
+The EP is available now on <a href="https://yearofthefieryhorse.bandcamp.com/album/the-recreation" target="_blank">Bandcamp</a>.
 
 It's also available from these locations:
 
