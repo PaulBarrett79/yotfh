@@ -5,7 +5,7 @@ Code for a website for Year Of The Fiery Horse (@yotfh on twitter), a musical ba
 
 It's pretty simple and based on twitter bootstrap for layout/responsiveness.
 
-It's built using jekyll becuase it's great for having templates and a simple blog/newsfeed.
+It's built using jekyll because it's great for having templates and a simple blog/newsfeed.
 
 IT'S ALIVE! www.yotfh.com
 
