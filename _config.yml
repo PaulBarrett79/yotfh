@@ -12,16 +12,24 @@ twitter_username: yotfh
 # Build settings
 markdown: kramdown
 gigs:
- - title: "YOTFH @ Night & Day"
-   location: "Night & Day, Oldham St., Manchester"
-   date: "2016-02-12"
-   doors: "8pm"
-   with: Sarah de Warren
-   tax: "£TBA"
-   url: "https://www.facebook.com/events/1073131469387205/"
+ - title: "YOTFH @ FestEVOL"
+   location: "Camp & Furnace, Greenland St, Liverpool"
+   date: "2016-05-01"
+   doors: "4pm"
+   supporting: "Juliette and the Licks, Steve Mason"
+   tax: "£20"
+   url: "https://www.facebook.com/events/558446067651173/"
 
  # - title: ''
  #   nogigs: 'nogigs'
+
+ # - title: "YOTFH @ Night & Day"
+ #   location: "Night & Day, Oldham St., Manchester"
+ #   date: "2016-02-12"
+ #   doors: "8pm"
+ #   with: Sarah de Warren
+ #   tax: "£TBA"
+ #   url: "https://www.facebook.com/events/1073131469387205/"
 
  # - title: "YOTFH @ Leaf"
  #   location: "Leaf, Bold St., Liverpool"
