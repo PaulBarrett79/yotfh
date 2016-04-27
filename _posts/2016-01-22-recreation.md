@@ -7,7 +7,7 @@ tags: news
 We are delighted to announce the release of our latest EP - "Recreation", containing 4 tracks recorded with Andy Fernihough.
 
 <figure>
-<img src="img/recreation-cover-300.png" class="img img-responsive center-block" style="border:1px solid #444">
+<img src="img/recreation-cover-300.png" class="img img-responsive center-block">
 </figure>
 
 <br>

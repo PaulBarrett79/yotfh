@@ -16,10 +16,10 @@ permalink: /gigs/
 	
 	{% assign sorted_gigs = site.gigs | sort: 'date' %}
 	{% for gig in sorted_gigs %}
-<div class="row">
-	<div class="col-xs-12 col-sm-3" style="padding-top:10px;">
+<div class="row sorted_gig">
+	<div class="col-xs-12 col-sm-3 gig-date-holder">
 		<div class="gig-date text-center">
-			<p style="padding:20px;">{{ gig.date | date: '%d %B %Y' }}</p>
+			<p>{{ gig.date | date: '%d %B %Y' }}</p>
 		</div>
 	</div>
 	<div class="col-xs-12 col-sm-9">

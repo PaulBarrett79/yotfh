@@ -7,7 +7,7 @@ tags: news
 We are excited to announce that we've been added to the line up for <a href="https://www.facebook.com/events/558446067651173/" target="_blank">FestEVOL at Camp & Furnace</a> in Liverpool on May 1st.
 
 <figure>
-<img src="img/festevol-announcement.jpg" class="img img-responsive center-block" style="border:1px solid #444">
+<img src="img/festevol-announcement.jpg" class="img img-responsive center-block">
 </figure>
 
 <br>
