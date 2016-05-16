@@ -12,13 +12,21 @@ twitter_username: yotfh
 # Build settings
 markdown: kramdown
 gigs:
- - title: "YOTFH @ FestEVOL"
-   location: "Camp & Furnace, Greenland St, Liverpool"
-   date: "2016-05-01"
-   doors: "1pm"
-   supporting: "Juliette and the Licks, Steve Mason"
-   tax: "£20"
-   url: "https://www.facebook.com/events/558446067651173/"
+ - title: "Strings & Things 4th Birthday show"
+   location: "Studio2, Parr St, Liverpool"
+   date: "2016-06-05"
+   doors: "7.30pm"
+   with: "Wild Rossa & The 88, Laura & The Hymens, Esme Bridie"
+   tax: "£2"
+   url: "https://www.facebook.com/events/1331490806867266/"
+
+ #- title: "YOTFH @ FestEVOL"
+ #  location: "Camp & Furnace, Greenland St, Liverpool"
+ #  date: "2016-05-01"
+ #  doors: "1pm"
+ #  supporting: "Juliette and the Licks, Steve Mason"
+ #  tax: "£20"
+ #  url: "https://www.facebook.com/events/558446067651173/"
 
  # - title: ''
  #   nogigs: 'nogigs'
